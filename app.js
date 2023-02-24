@@ -9,18 +9,9 @@ const textLoad = () => {
     setTimeout(() => {
       text.textContent = "These are my projects...";
       text.style.setProperty('--steps', text.textContent.length);
-    }, 4000);
-    setTimeout(() => {
-      text.textContent = "Oh wait...";
-      text.style.setProperty('--steps', text.textContent.length);
-    }, 8000);
-    setTimeout(() => {
-      text.textContent = "I have no projects :( ";
-      text.style.setProperty('--steps', text.textContent.length);
       text.style.animation = "none";
       text.style.borderLeft = "2px transparent";
-      
-    }, 12000);
+    }, 4000);
   }, 0);
 };
 
