@@ -9,18 +9,20 @@
 
 #bg {
     position: absolute;
+    height: 200%;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 
   }
+
  
 
 body {
     background-color: black;
-    height: 100vh;
+    height: 200vh;
     
   }
   /* INTRO HEADER */
@@ -29,7 +31,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 400;
+    margin-top: 200;
+    z-index: -1;
   }
 
   .header {
@@ -37,7 +40,7 @@ body {
     color: aquamarine; 
     font-size: 30px;
     font-weight: 600;
-    
+    z-index: -1;
 
   }
 
@@ -60,26 +63,28 @@ body {
   
   .project-container {
     display: flex;
-    width: 70%;
+    width: 50%;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     gap: 4em;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50;
+
   }
   .project {
     position: relative;
     width: 400px;
     height: 250px;
-    background-color: rgb(18, 18, 18);
+    background-color: rgba(18, 18, 18, 0.6);
     opacity: 0;
     border-radius: 10px;
     transform: scale(0.5);
     animation-name: fade-in;
     animation-duration: 1.3s;
     animation-fill-mode: forwards;
+    z-index: 9999;
   
     
   }
@@ -91,12 +96,28 @@ body {
     padding-right: 5px;
 
   }
+  .project1-image{
+    position: absolute;
+    float: left;
+    width:320px;
+    height: 250px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    object-fit: cover;
+    object-position: left;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    -webkit-mask-image: linear-gradient(to left, transparent 40%, black);
+  mask-image: linear-gradient(to left, transparent 40%, black);
+  }
   .project-description {
     position: absolute;
     color: white;
     text-align: right;
     right: 0;
-    padding-top: 5px;
+    padding-top: 7px;
+    padding-bottom: 5px;
     padding-right: 8px;
     width: 65%;
 
@@ -113,12 +134,14 @@ body {
     font-weight: 600;
     padding: 5px 5px;
     border: none;
+    border-radius: 20px;
+  
 
     -webkit-user-select: auto;
     -moz-user-select: auto;
     -ms-user-select: auto;
     user-select: auto;
-
+    cursor: pointer;
   }
 
   .project:nth-child(1) {
@@ -145,7 +168,6 @@ body {
       }
       90% {
         left: 100%;
-        /* border-left: 4px; */
         opacity: 0;
         animation-timing-function: linear;
       }

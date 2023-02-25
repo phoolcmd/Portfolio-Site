@@ -1,20 +1,20 @@
 particlesJS("bg", {
     "particles": {
       "number": {
-        "value": 90,
+        "value": 50,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "triangle",
+        "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "#69FF9B"
         },
         "polygon": {
           "nb_sides": 5
@@ -29,34 +29,35 @@ particlesJS("bg", {
         "value": 0.5,
         "random": false,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
           "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 3,
+        "value": 2,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 40,
-          "size_min": 0.1,
+          "size_min": 0.5,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 125,
+        "distance": 225,
         "color": "#ffffff",
+        "colorconnect": '#0adf91',
         "opacity": 0.2,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 0.3,
         "direction": "none",
-        "random": false,
+        "random": true,
         "straight": false,
         "out_mode": "out",
         "bounce": false,
@@ -68,7 +69,7 @@ particlesJS("bg", {
       }
     },
     "interactivity": {
-      "detect_on": "canvas",
+      "detect_on": "window",
       "events": {
         "onhover": {
           "enable": true,
@@ -82,9 +83,10 @@ particlesJS("bg", {
       },
       "modes": {
         "grab": {
-          "distance": 140,
+          "distance": 250,
           "line_linked": {
-            "opacity": 1
+            "opacity": 1,
+            "color": '#0adf91'
           }
         },
         "bubble": {
@@ -95,8 +97,8 @@ particlesJS("bg", {
           "speed": 3
         },
         "repulse": {
-          "distance": 200,
-          "duration": 0.4
+          "distance": 250,
+          "duration": 8.0
         },
         "push": {
           "particles_nb": 4
@@ -108,4 +110,5 @@ particlesJS("bg", {
     },
     "retina_detect": true
   });
+
   
