@@ -9,8 +9,7 @@ const textLoad = () => {
     setTimeout(() => {
       text.textContent = "These are my projects...";
       text.style.setProperty('--steps', text.textContent.length);
-      text.style.animation = "none";
-      text.style.borderLeft = "2px transparent";
+      
     }, 4000);
   }, 0);
 };

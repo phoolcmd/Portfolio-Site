@@ -9,7 +9,7 @@
 
 #bg {
     position: absolute;
-    height: 200%;
+    height: 100%;
     top: 0;
     left: 0;
     bottom: 0;
@@ -22,7 +22,7 @@
 
 body {
     background-color: black;
-    height: 200vh;
+    height: 80vh;
     
   }
   /* INTRO HEADER */
@@ -75,11 +75,12 @@ body {
   }
   .project {
     position: relative;
-    width: 400px;
-    height: 250px;
-    background-color: rgba(18, 18, 18, 0.6);
+    width: 600px;
+    height: 300px;
+    /* background-color: rgba(18, 18, 18, 0.6); */
+    outline: 0.5px solid white;
     opacity: 0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     transform: scale(0.5);
     animation-name: fade-in;
     animation-duration: 1.3s;
@@ -89,18 +90,32 @@ body {
     
   }
   .project-title{
- 
+ position: relative;
     color: white;
-    background: linear-gradient(to left, #1EFFAE, transparent 33%);
+    /* background: linear-gradient(to left, #1EFFAE, transparent 33%); */
     text-align: right;
-    padding-right: 5px;
+    padding-right: 10px;
 
   }
+
+ .project-title::before {
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid rgb(0, 255, 179);
+  margin: 0 auto;
+  width: 10%;
+  height: 3px;
+  right: 0;
+  bottom: 0;
+  margin-right: 10px;
+  border-radius: 2px;
+ }
+
   .project1-image{
     position: absolute;
     float: left;
-    width:320px;
-    height: 250px;
+    width:500px;
+    height: 300px;
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -108,10 +123,14 @@ body {
     object-position: left;
     border: 1px solid black;
     margin-bottom: 10px;
-    -webkit-mask-image: linear-gradient(to left, transparent 40%, black);
+    -webkit-mask-image: linear-gradient(to left, transparent 30%, black);
   mask-image: linear-gradient(to left, transparent 40%, black);
   }
   .project-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     position: absolute;
     color: white;
     text-align: right;
@@ -127,14 +146,18 @@ body {
     bottom: 15;
     right: 30;
 
-    color: white;
-    background: linear-gradient(to bottom, #094c74, #0adf91 40%); 
+    /* color: white; */
+    /* background: linear-gradient(to bottom, #094c74, #0adf91 40%);  */
     font-family: 'Kanit', sans-serif; 
     font-size: 150%;
-    font-weight: 600;
+    font-weight: 400;
     padding: 5px 5px;
     border: none;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    background-color: transparent;
+    color: white;
+    outline: 1px solid white;
+  
   
 
     -webkit-user-select: auto;
@@ -143,6 +166,14 @@ body {
     user-select: auto;
     cursor: pointer;
   }
+  .project-button:hover {
+  animation: hover-grow 1s forwards;
+  }
+
+  .project-button:not(:hover) {
+    animation: hover-shrink 1s forwards;
+  }
+ 
 
   .project:nth-child(1) {
     animation-delay: 2s;
@@ -173,7 +204,27 @@ body {
       }
       
     }
+    @keyframes hover-grow {
+      0% {
+        transform: scale(1);
+          
+        }
+
+        100% {
+          transform: scale(1.1);
+
+        }
+        
+      }
    
+      @keyframes hover-shrink {
+        from {
+          transform: scale(1.1);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
 
  @keyframes blink {
       to {
