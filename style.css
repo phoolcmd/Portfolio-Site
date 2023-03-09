@@ -305,10 +305,13 @@ body {
 }  
 
 @media screen and (max-width: 768px) {
+  .header {
+    font-size: 25px;
+  }
   .project {
-    min-width: 500px;
+    min-width: 420px;
   }
   .nav-links {
-    width: 50%;
+    width: 80%;
   }
 }
