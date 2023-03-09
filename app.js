@@ -42,7 +42,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  rootMargin: "-30% 0px -45% 0px",
+  rootMargin: "-26% 0px -46% 0px",
   threshold: [0, 0.2]
 });
 
