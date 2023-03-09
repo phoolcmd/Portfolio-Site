@@ -1,72 +1,83 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Noah Wood</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Intro Header-->
-    <div class = "intro-container">
-        <div class = "header"></div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Noah Wood</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="stylesheet" href="style.css" />
 
-    </div>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Music</a></li>
+    </ul>
 
-    <!-- Project Modules -->
-    <div class = "project-container">
-         <!-- Project 1 -->
-        <div class = "project">
-          <img src = "images/synth.PNG" alt="synth image" class="project1-image"> 
-            <h2 class = "project-title">Single OSC FM Synth</h2>
-            
-            <p class = "project-description">A VST synth built using the JUCE framework. Polyphonic oscillator
-              with 3 different waveforms. Features adsr paramaters, variable state filter control, and mod envelope 
-              settings.</p>
+  </nav>
 
-              <a href = "https://github.com/phoolcmd/Single-Osc-FM-Synth-with-ADSR-and-Variable-State-Filter">
-              <button class ="project-button">Source Code</button></a>
-        </div>
-        <!-- Project 2 -->
-        <div class = "project">
-          <h2 class = "project-title">Basic EQ</h2>
-          <p class = "project-description">A simple eq featuring low cut, high cut, and a peak filter.
-            Features a visual response curve thats adjusts dynamically with parameters. Still a work in 
-            progress.
-          </p>
-            <a href = "https://github.com/phoolcmd/ThreeBandEQ">
-              <button class ="project-button">Source Code</button></a>
-
-      </div>
-      <!-- Project 3 -->
-      <div class = "project">
-        <h2 class = "project-title">Project 3</h2>
-        
-        <p class = "project-description">Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris</p>
-          <button class ="project-button">Source Code</button>
-    </div>
-    <!-- Project 4 -->
-    <div class = "project">
-      <h2 class = "project-title">Project 4</h2>
-      <p class = "project-description">Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris</p>
-        <button class ="project-button">Source Code</button>
+  <!-- Intro Header-->
+  <div class="intro-container">
+    <div class="header"></div>
   </div>
 
+  <!-- Project Modules -->
+  <div class="project-container">
+    <!-- Project 1 -->
+    <div class="project">
+      <img src="images/synth.PNG" alt="synth image" class="project1-image">
+      <h2 class="project-title">Single OSC FM Synth</h2>
+      <p class="project-description">A VST synth built using the JUCE framework. Polyphonic oscillator
+        with 3 different waveforms. Features adsr paramaters, variable state filter control, and mod envelope
+        settings.</p>
+      <a href="https://github.com/phoolcmd/Single-Osc-FM-Synth-with-ADSR-and-Variable-State-Filter">
+        <button class="project-button">Source Code</button></a>
     </div>
-    <!-- Particle JS -->
-    <div id="bg"></div>
 
-    <!-- Scripts -->
-    <script src="./app.js"></script>
-    <script type="text/javascript" src="js/particles.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-  </body>
+    <!-- Project 2 -->
+    <div class="project">
+      <h2 class="project-title">Basic EQ</h2>
+      <p class="project-description">A simple eq featuring low cut, high cut, and a peak filter.
+        Features a visual response curve thats adjusts dynamically with parameters. Still a work in
+        progress.</p>
+      <a href="https://github.com/phoolcmd/ThreeBandEQ">
+        <button class="project-button">Source Code</button></a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+      <h2 class="project-title">Project 3</h2>
+      <p class="project-description">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris</p>
+      <button class="project-button">Source Code</button>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project">
+      <h2 class="project-title">Project 4</h2>
+      <p class="project-description">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris</p>
+      <button class="project-button">Source Code</button>
+    </div>
+  </div>
+
+  <!-- Particle JS -->
+  <div id="bg"></div>
+
+  <!-- Scripts -->
+  <script src="./app.js"></script>
+  <script type="text/javascript" src="js/particles.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  
+</body>
+
 </html>
