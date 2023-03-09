@@ -7,6 +7,11 @@
   font-family: 'Kanit', sans-serif;
   background-attachment: fixed;
 }
+body {
+  background-color: black;
+  height: 250vh;
+
+}
 
 #bg {
   position: fixed;
@@ -18,6 +23,7 @@
   
 
 }
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -61,11 +67,7 @@ list-style: none;
 
 
 
-body {
-  background-color: black;
-  height: 100vh;
 
-}
 
 /* INTRO HEADER */
 
@@ -96,7 +98,7 @@ body {
   width: 100%;
   background-color: black;
   border-left: 2px solid aquamarine;
-  animation: typewriter 4s steps(var(--steps, 12)) 2 forwards,
+  animation: typewriter 4s steps(var(--steps, 16)) 2 forwards,
     blink 500ms steps(12) 20 forwards;
 
 
@@ -109,6 +111,7 @@ body {
   font-weight: 600;
   z-index: -1;
   opacity: 0;
+  margin-left: 100px;
   
 }
 
@@ -127,7 +130,7 @@ body {
   width: 100%;
   background-color: black;
   border-left: 2px solid  #00ffb3;
-  animation: typewriter2 2s steps(var(--stepsMusic, 12)) 1 forwards,
+  animation: typewriter2 2s steps(var(--stepsMusic, 16)) 1 forwards,
     blink 500ms steps(12) 10 forwards;
 }
 
@@ -264,12 +267,13 @@ body {
 
 .music-container {
   display: flex;
-  max-width: 800px;
+  max-width: 1200px;
+  max-height: 900px;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  gap: 4em;
+  gap: 6em;
   margin: 0 auto;
   margin-top: 50;
 
@@ -277,8 +281,8 @@ body {
 .music {
   opacity: 0;
   position: relative;
-  min-width: 600px;
-  height: 300px;
+  min-width: 300px;
+  height: 500px;
   background: transparent;
   border: 10px solid;
   border-image-slice: 1;
@@ -286,11 +290,7 @@ body {
   border-image-source: linear-gradient(to right, white, transparent);
   border-radius: 10px;
   backdrop-filter: blur(1.5px);
-  /* transform: scale(0.5); 
-  animation-name: fade-in;
-  animation-duration: 1.3s;
-  animation-fill-mode: forwards; */
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   filter: blur(5px);
   transition: all 1s;
   z-index: 9999;
@@ -313,13 +313,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 350px;
 }
 
 .controls div {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin: 20px;
-  font-size: 32px;
+  font-size: 20px;
   background-color: transparent;
   display: inline-flex;
   justify-content: center;
@@ -332,15 +333,27 @@ body {
   cursor: pointer;
 
 }
+.music:nth-child(2) {
+  transition-delay: 200ms;
+}
+.music:nth-child(3) {
+  transition-delay: 400ms;
+}
 
 #progress {
+ position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
 -webkit-appearance: none;
-width: 100%;
+justify-content: center;
+align-items: center;
+width: 70%;
 height: 6px;
+margin: 10px, 10px;
 background-color: #ffffff;
 border-radius: 4px;
 cursor: pointer;
-margin: 40px;
 }
 #progress::-webkit-slider-thumb{
   -webkit-appearance: none;
@@ -380,7 +393,7 @@ margin: 40px;
   90% {
     left: 100%;
     opacity: 1;
-    animation-timing-function: linear;
+
   }
   100% {
     left: 100%;

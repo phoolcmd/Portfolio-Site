@@ -42,7 +42,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  rootMargin: "0px 0px -40% 0px",
+  rootMargin: "-30% 0px -45% 0px",
   threshold: [0, 0.2]
 });
 
@@ -59,7 +59,7 @@ const musicObserver = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  rootMargin: "0px 0px -40% 0px",
+  rootMargin: "0px 0px -45% 30%",
   threshold: [0, 1]
 });
 
@@ -135,6 +135,11 @@ hiddenElements.forEach((el) => observer.observe(el));
 musicElements.forEach(musicElement => {
   musicObserver.observe(musicElement);
 });
+
+
+
+
+
 
 textLoadIntro();
 headerObserver.observe(textMusic);
