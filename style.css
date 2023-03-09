@@ -314,4 +314,7 @@ body {
   .nav-links {
     width: 80%;
   }
+  nav {
+    border-image-source: linear-gradient(to right, transparent 10%, white 25%, transparent 40%,transparent 65%, white 75%, transparent 90%);
+  }
 }
