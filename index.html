@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/0b2bb85212.js" crossorigin="anonymous"></script>
 
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -22,8 +23,8 @@
   </nav>
 
   <!-- Intro Header-->
-  <div class="intro-container">
-    <div class="header"></div>
+  <div class="header-container">
+    <div class="intro-header"></div>
   </div>
 
   <!-- Project Modules -->
@@ -70,11 +71,71 @@
     </div>
   </div>
 
+  <!-- Music Header-->
+  <div class="header-container">
+    <div class="music-header"></div>
+    <p>Some text here</p>
+
+  </div>
+
+<!-- Music Modules -->
+<div class="music-container">
+  <!-- Song 1 -->
+  <div class="music">
+    <h2 class="music-title">Time Indefinite</h2>
+    <audio id="song">
+      <source src="media/time indefinite.mp3" type="audio/mpeg">
+    </audio>
+    <input type="range" value="0" id="progress">
+
+    <div class="controls">
+      <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+    </div>
+  </div>
+<!-- Song 2 -->
+<div class="music">
+  <h2 class="music-title">Test</h2>
+  <audio id="song">
+    <source src="media/time indefinite.mp3" type="audio/mpeg">
+  </audio>
+  <input type="range" value="0" id="progress">
+
+  <div class="controls">
+    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+  </div>
+</div>
+<!-- Song 2 -->
+<div class="music">
+  <h2 class="music-title">Test</h2>
+  <audio id="song">
+    <source src="media/time indefinite.mp3" type="audio/mpeg">
+  </audio>
+  <input type="range" value="0" id="progress">
+
+  <div class="controls">
+    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+  </div>
+</div>
+<!-- Song 2 -->
+<div class="music">
+  <h2 class="music-title">Test</h2>
+  <audio id="song">
+    <source src="media/time indefinite.mp3" type="audio/mpeg">
+  </audio>
+  <input type="range" value="0" id="progress">
+
+  <div class="controls">
+    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+  </div>
+</div>
+</div>
+
+  
   <!-- Particle JS -->
   <div id="bg"></div>
 
   <!-- Scripts -->
-  <script src="./app.js"></script>
+  <script defer src="./app.js"></script>
   <script type="text/javascript" src="js/particles.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   
