@@ -119,7 +119,7 @@ var audioTrack = WaveSurfer.create ({
   hideScrollbar: true,
 });
 
-audioTrack.load("/media/time indefinite.mp3");
+audioTrack.load("media/time_indefinite.mp3");
 
 const playBtn = document.querySelector(".play-btn");
 const stopBtn = document.querySelector(".stop-btn");
