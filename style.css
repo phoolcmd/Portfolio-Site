@@ -267,8 +267,8 @@ list-style: none;
 
 .music-container {
   display: flex;
-  max-width: 1200px;
-  max-height: 900px;
+  max-width: 1300px;
+  max-height: 2000px;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -276,13 +276,12 @@ list-style: none;
   gap: 6em;
   margin: 0 auto;
   margin-top: 50;
-
 }
-.music {
+.music-container .song {
   opacity: 0;
   position: relative;
-  min-width: 300px;
-  height: 500px;
+  min-width: 500px;
+  height: 300px;
   background: transparent;
   border: 10px solid;
   border-image-slice: 1;
@@ -294,76 +293,67 @@ list-style: none;
   filter: blur(5px);
   transition: all 1s;
   z-index: 9999;
+  padding: 10px;
 }
-.music-show {
+.music-container .song-show {
   opacity: 1;
   transform: translateX(0);
   filter: blur(0);
 }
-.music-title {
+.music-container .song-title {
   position: relative;
   color: white;
   /* background: linear-gradient(to left, #1EFFAE, transparent 33%); */
   text-align: right;
   padding-right: 15px;
   padding-top: 15px;
-
-}
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 350px;
 }
 
-.controls div {
-  width: 40px;
-  height: 40px;
-  margin: 20px;
-  font-size: 20px;
-  background-color: transparent;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid;
-  border-radius: 50%;
-  border-width: 2px;
-  border-color: white;
-  color: white;
+.music-container .btn {
+  padding: 10px;
+  width: 48px;
+  margin-right: 8px;
   cursor: pointer;
-
-}
-.music:nth-child(2) {
-  transition-delay: 200ms;
-}
-.music:nth-child(3) {
-  transition-delay: 400ms;
+  display: inline-block;
+  color: rgb(255, 255, 255); 
+  font-size: 24px;
 }
 
-#progress {
- position: absolute;
-top: 70%;
-left: 50%;
-transform: translate(-50%, -50%);
--webkit-appearance: none;
-justify-content: center;
-align-items: center;
-width: 70%;
-height: 6px;
-margin: 10px, 10px;
-background-color: #ffffff;
-border-radius: 4px;
-cursor: pointer;
-}
-#progress::-webkit-slider-thumb{
-  -webkit-appearance: none;
-  background-color: transparent;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 3px solid white;
 
+.music-container .volume-slider {
+  width: 250px;
 }
+
+.music-container .buttons {
+  position: absolute;
+  top: 70%;
+}
+
+.music-container .buttons .play-btn .fa-pause {
+  display: none;
+}
+
+.music-container .buttons .play-btn.playing .fa-pause {
+  display: inline-block;
+}
+
+.music-container .buttons .play-btn.play-btn.playing .fa-play {
+  display: none;
+}
+
+.music-container .buttons .mute-btn .fa-volume-xmark {
+  display: none;
+}
+
+.music-container .buttons .mute-btn.muted .fa-volume-xmark {
+  display: inline-block;
+}
+
+.music-container .buttons .mute-btn.muted .fa-volume-up {
+  display: none;
+}
+
+
 
 @keyframes typewriter {
   0% {
