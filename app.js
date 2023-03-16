@@ -91,6 +91,26 @@ musicElements.forEach(musicElement => {
 
 
 //********Music Controls & Waveform********\\
+
+//refer to this later for adding additional tracks
+
+/*const audioTracks = [
+  WaveSurfer.create({
+    container: ".song1",
+    waveColor: "white",
+    progressColor: "#00ffb3",
+    barWidth: 1,
+    hideScrollbar: true,
+  }).load("media/song1.mp3"),
+
+  WaveSurfer.create({
+    container: ".song2",
+    waveColor: "white",
+    progressColor: "#00ffb3",
+    barWidth: 1,
+    hideScrollbar: true,
+  }).load("media/song2.mp3"),*/ 
+  
 var audioTrack = WaveSurfer.create ({
   container: ".song",
   waveColor: "white",
@@ -99,7 +119,7 @@ var audioTrack = WaveSurfer.create ({
   hideScrollbar: true,
 });
 
-audioTrack.load("../media/time indefinite.mp3");
+audioTrack.load("/media/time indefinite.mp3");
 
 const playBtn = document.querySelector(".play-btn");
 const stopBtn = document.querySelector(".stop-btn");
