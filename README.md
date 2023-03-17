@@ -14,4 +14,6 @@ If you would like to demo the site without building it yourself, you can visit t
 2. Add additional songs that are short samples instead of the entire song.
 3. Add About Me section
 4. Add Contact Form
+5. Change typewriter header animation to be fully javascript
+6. Swap ParticleJS for TSParticles to reduce CPU usage
 
