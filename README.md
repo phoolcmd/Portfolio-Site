@@ -9,4 +9,9 @@ If you would like to demo the site without building it yourself, you can visit t
 1. Navigate to the Environments section on the right-hand side of the repository page.
 2. Click on the Github Pages link.
 3. Open the latest deployment to view the live site.
+# TODO:
+1. Tweak UI for music cards.
+2. Add additional songs that are short samples instead of the entire song.
+3. Add About Me section
+4. Add Contact Form
 
