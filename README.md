@@ -15,5 +15,5 @@ If you would like to demo the site without building it yourself, you can visit t
 3. Add About Me section
 4. Add Contact Form
 5. Change typewriter header animation to be fully javascript
-6. Swap ParticleJS for TSParticles to reduce CPU usage
+6. Swap ParticleJS for tsParticles to reduce CPU usage
 
