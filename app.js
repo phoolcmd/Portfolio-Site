@@ -41,7 +41,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  rootMargin: "-26% 0px -46% 0px",
+  rootMargin: "-10% 0px -27% 0px",
   threshold: [0, 0.2]
 });
 
@@ -59,7 +59,7 @@ const musicObserver = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  rootMargin: "0px 0px -46% 31%",
+  rootMargin: "0px 0px -47% 31%",
   threshold: [0, 1]
 });
 
